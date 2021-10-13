@@ -1,0 +1,20 @@
+body {
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+p {
+  display: inline-block;
+  color: blue;
+}
+
+button {
+  border: 2px solid;
+  color: yellow;
+  background-color: pink;
+}

@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.banner_container {
+  position: relative;
+  margin: 100px;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+}
+
+ul.img_box {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.img_box li {
+  list-style: none;
+}
+
+/* 图片大小 */
+.img_box li img {
+  width: 300px;
+  height: 300px;
+}
+
+/* 小圆点 */
+.sel_box {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.sel_box li {
+  list-style: none;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: yellow;
+  border-radius: 4px;
+  margin-right: 3px;
+}
+
+/* 左箭头 */
+.left_btn {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 25px;
+  height: 30px;
+  background-color: pink;
+  padding-left: 3px;
+  line-height: 30px;
+  cursor: pointer;
+}
+
+.right_btn {
+  position: absolute;
+  top: 50%;
+  left: 275px;
+  transform: translateY(-50%);
+  width: 25px;
+  height: 30px;
+  background-color: pink;
+  line-height: 30px;
+  padding-left: 5px;
+  cursor: pointer;
+}
+
+/* 当前图片的小图点样式 */
+.sel_box .cur {
+  background-color: red !important;
+  transform: scale(1.3);
+}

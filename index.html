@@ -1,21 +1,40 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Modal</title>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="Modal/src/styles.css"></link>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Facebook DOM Traversal</title>
   </head>
-
   <body>
-    <button id="btn">Click to open popup</button>
-    
-    <div class="popup-container">
-      <div class="popup"> 
-        <button>x</button>
-        <p>Hi This is popup.</p>
+    <div id="rootA">
+      <div>
+        <div></div>
+      </div>
+
+      <div></div>
+
+      <div>
+        <div>
+          <div id="nodeA"></div>
+          <div></div>
+        </div>
       </div>
     </div>
 
-    <script src="Modal/src/index.js"></script>
+    <div id="rootB">
+      <div>
+        <div></div>
+      </div>
+
+      <div></div>
+
+      <div>
+        <div>
+          <div id="nodeB"></div>
+          <div></div>
+        </div>
+      </div>
+    </div>
+    <script src="findDomNode/src/index.js" /></script>
   </body>
 </html>
